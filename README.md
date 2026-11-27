@@ -25,11 +25,11 @@ npm run build
 
 ## Deployment
 
-Do not publish a public URL until you approve it.
+The source repository is public by your request: [modified-solar-hollow-cylinder-paddy-dryer](https://github.com/parthpariwandh/modified-solar-hollow-cylinder-paddy-dryer). The reports and slides still contain the roll number and the registration number, so those identifiers are now public with the repository. The page itself still omits them.
 
 This app is a TanStack Start site. The production build is a server app for the connected host, not a folder you can drop onto GitHub Pages by itself. A repository is the source. A running public site is a separate decision.
 
-The private source repository is [modified-solar-hollow-cylinder-paddy-dryer](https://github.com/parthpariwandh/modified-solar-hollow-cylinder-paddy-dryer). It stays private because the reports still include the roll number and the registration number, and this package is not an approved public release. The older public repository Solar-Assisted-Hollow-Cylinder-Paddy-Dryer is the 29 October note set only. It was not replaced.
+The older public repository Solar-Assisted-Hollow-Cylinder-Paddy-Dryer is the 29 October note set only. It was not replaced.
 
 Calculations run in the browser from the bundled model. They do not call an external formula service.
 
