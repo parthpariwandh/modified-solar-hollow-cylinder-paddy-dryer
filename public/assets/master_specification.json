@@ -1,0 +1,190 @@
+{
+  "version": "1.0-review-2026-11-27",
+  "title": "Modified Solar-Assisted Hollow-Cylinder Paddy Dryer",
+  "title_status": "latest working title; formal allocation confirmation pending",
+  "student": "Parth Pariwandh",
+  "supervisor": "Prof. Dulal Krishna Mandal",
+  "courses": [
+    {
+      "semester": "4.1",
+      "code": "ME(M2)/Pr/B/S/414",
+      "credits": 1.5
+    },
+    {
+      "semester": "4.2",
+      "code": "ME(M2)/Pr/B/S/423",
+      "credits": 1.5
+    }
+  ],
+  "course_verification": "Module 2 reproductions and prior planning record agree; original JU repository PDF not directly accessible",
+  "status": "preliminary, untested, not fabrication approved",
+  "reference": {
+    "batch_kg": 100,
+    "moisture_initial_wb": 0.22,
+    "moisture_final_wb": 0.14,
+    "bulk_density_kg_m3": 560,
+    "outer_od_mm": 670,
+    "outer_wall_mm": 2,
+    "inner_od_mm": 250,
+    "inner_wall_mm": 1.2,
+    "fill_mm": 600,
+    "inner_hole_mm": 1.5,
+    "inner_pitch_mm": 6,
+    "outer_hole_mm": 2,
+    "outer_pitch_mm": 12,
+    "outer_vent_zone": "upper half",
+    "shell_model": "smooth two concentric shells only"
+  },
+  "first_trial": {
+    "recommended_scale": "24 kg lab concept pending approval",
+    "plenum_C": [
+      40,
+      45
+    ],
+    "grain_limit": "prior note below ~50°C; propose conservative late-stage ≤40°C, approval needed",
+    "heater_rating": "unresolved"
+  },
+  "alternate_case": {
+    "hours": 6,
+    "ambient_C": 30,
+    "ambient_RH": 0.7,
+    "inlet_C": 80,
+    "outlet_C": 45,
+    "outlet_RH": 0.7,
+    "pressure_kPa": 101.325,
+    "solar_alpha": 0.9,
+    "solar_G_W_m2": 600,
+    "voidage": 0.45,
+    "particle_d_m": 0.0025,
+    "mu_Pa_s": 2.07e-05,
+    "h_fg_kJ_kg": 2406,
+    "cp_grain_kJ_kgK": 1.7
+  },
+  "recalculated": {
+    "water_kg": 9.302325581395348,
+    "dry_solids_kg": 78.0,
+    "final_mass_kg": 90.69767441860465,
+    "required_volume_m3": 0.17857142857142858,
+    "area_m2": 0.2992806825515781,
+    "capacity_kg": 100.55830933733024,
+    "required_outer_OD_mm": 668.4097686631263,
+    "radial_gap_mm": 208.00000000000003,
+    "omega_in": 0.018754064727789895,
+    "omega_out": 0.044134924827531445,
+    "humidity_pickup": 0.02538086009974155,
+    "dry_air_kg_s": 0.01696803101504354,
+    "flow_m3_h": 62.954110977773674,
+    "superficial_m_s": 0.05843094482507343,
+    "bed_dp_Pa": 66.37345231906374,
+    "useful_MJ": 24.931395348837206,
+    "legacy_margin_kW": 1.731346899224806,
+    "air_preheat_kW": 0.8830863783889024,
+    "bed_enthalpy_increase_kW": 0.4949747633792753,
+    "solar_gross_kW": 0.21708000000000002,
+    "legacy_dp_Pa": 64.63828148148147,
+    "inner_open_pct": 5.668123013231932,
+    "outer_open_pct": 2.5191657836586363
+  },
+  "references": [
+    {
+      "id": "P1",
+      "description": "Pariwandh, P. Initial Concept Report, September 2026 (24 pages; attached to 1 September email).",
+      "url": "Internal project record"
+    },
+    {
+      "id": "P2",
+      "description": "Pariwandh, P. Progress Application, 30 September 2026; initial CAD pack and concept videos.",
+      "url": "Internal project record"
+    },
+    {
+      "id": "P3",
+      "description": "Pariwandh, P. Integrated Preliminary Design and 1-Quintal Calculation Note, 9 October 2026 (6 pp.); Compiled Design Note (5 pp.).",
+      "url": "Internal project record"
+    },
+    {
+      "id": "P4",
+      "description": "Pariwandh, P. Progress Note, 29 October 2026 (4 pp.).",
+      "url": "Internal project record"
+    },
+    {
+      "id": "R1",
+      "description": "JU, Syllabus of Mechanical Engineering, repository listing (2022).",
+      "url": "https://irju.jdvu.ac.in/handle/123456789/460"
+    },
+    {
+      "id": "R2",
+      "description": "Module 2 curriculum and syllabus reproductions; codes and continuation/evaluation information; departmental original not directly accessible.",
+      "url": "https://www.scribd.com/document/1061326003/Curriculum-of-ME-of-1st-to-4th-Year-UG-Module-2"
+    },
+    {
+      "id": "R3",
+      "description": "Module 2 course descriptions, reproduced syllabus: single topic, same supervisor, semester report and board.",
+      "url": "https://www.scribd.com/document/543714178/Internal-Convertion-2"
+    },
+    {
+      "id": "R4",
+      "description": "FAO. Grain storage techniques: Drying principles and general considerations.",
+      "url": "https://www.fao.org/4/T1838E/T1838E0u.htm"
+    },
+    {
+      "id": "R5",
+      "description": "FAO. Grain storage techniques: Natural and solar drying.",
+      "url": "https://www.fao.org/4/t1838e/T1838E0V.HTM"
+    },
+    {
+      "id": "R6",
+      "description": "Tohidi, Sadeghi & Torki-Harchegani (2017). Energy and quality aspects for fixed deep bed drying of paddy. Renewable and Sustainable Energy Reviews 70, 519–528.",
+      "url": "https://doi.org/10.1016/j.rser.2016.11.196"
+    },
+    {
+      "id": "R7",
+      "description": "Design, construction and performance evaluation of paddy rice solar drum dryer equipped with perforated drum (2023). Clean Energy 7, 328 ff.",
+      "url": "https://doi.org/10.1093/ce/zkac074"
+    },
+    {
+      "id": "R8",
+      "description": "Process optimization of paddy drying in cross-flow aerated drying cum storage bin. Agricultural Engineering Today.",
+      "url": "https://pub.isae.in/index.php/aet/article/view/2957"
+    },
+    {
+      "id": "R9",
+      "description": "Regalado et al. Dehumidification drying of high-moisture rough rice in a radial-flow circular bin dryer.",
+      "url": "https://www.ukdr.uplb.edu.ph/journal-articles/3357/"
+    },
+    {
+      "id": "R10",
+      "description": "Anchal, Dubey & Kumar (2020). Evaluation and Selection of Thin-layer Drying Models for Paddy Dried in Static Flat-bed Batch Dryer.",
+      "url": "https://doi.org/10.9734/cjast/2020/v39i530546"
+    },
+    {
+      "id": "R11",
+      "description": "Ergun, S. (1952). Fluid Flow Through Packed Columns. Chemical Engineering Progress 48, 89–94.",
+      "url": "https://www.industrydocuments.ucsf.edu/tid/efk76a99/pdf"
+    },
+    {
+      "id": "R12",
+      "description": "Performance analysis of solar-biomass hybrid heat pump batch-type horizontal fluidized bed dryer using multi-stage heat exchanger for paddy drying (2022). Energy 254, 124294.",
+      "url": "https://doi.org/10.1016/j.energy.2022.124294"
+    },
+    {
+      "id": "R13",
+      "description": "SOLIDWORKS Help. Creating an Extrude Feature (2024); STEP files (2025).",
+      "url": "https://help.solidworks.com/2024/English/solidworks/sldworks/t_creating_an_extrude_feature.htm"
+    },
+    {
+      "id": "R14",
+      "description": "IRRI-linked guidance: drying harvested paddy, slower drying below 18%, storage moisture.",
+      "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/d5f3734f-3d0d-4381-983a-dbe65523775e/content"
+    },
+    {
+      "id": "R15",
+      "description": "Simulation and grain quality for in-store drying of paddy. Journal of Food Engineering.",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0260877403003534"
+    },
+    {
+      "id": "R16",
+      "description": "SOLIDWORKS Help. STEP Files (2025).",
+      "url": "https://help.solidworks.com/2025/english/SolidWorks/sldworks/c_Step_Files.htm"
+    }
+  ]
+}

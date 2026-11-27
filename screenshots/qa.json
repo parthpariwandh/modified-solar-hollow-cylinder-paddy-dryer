@@ -1,0 +1,53 @@
+[
+  {
+    "width": 390,
+    "scroll": 390,
+    "water": "9.302 kg\n\nWater removed",
+    "water2": "12.791 kg\n\nWater removed",
+    "water3": "9.302 kg\n\nWater removed",
+    "blocked": true,
+    "lab": true,
+    "href": "/assets/docs/JU_Technical_Report.pdf",
+    "video": {
+      "src": "/assets/docs/JU_Silent_Technical_Demonstration.mp4",
+      "duration": 227,
+      "paused": true
+    },
+    "errors": [],
+    "canvas": 1
+  },
+  {
+    "width": 768,
+    "scroll": 768,
+    "water": "9.302 kg\n\nWater removed",
+    "water2": "12.791 kg\n\nWater removed",
+    "water3": "9.302 kg\n\nWater removed",
+    "blocked": true,
+    "lab": true,
+    "href": "/assets/docs/JU_Technical_Report.pdf",
+    "video": {
+      "src": "/assets/docs/JU_Silent_Technical_Demonstration.mp4",
+      "duration": 227,
+      "paused": true
+    },
+    "errors": [],
+    "canvas": 1
+  },
+  {
+    "width": 1440,
+    "scroll": 1440,
+    "water": "9.302 kg\n\nWater removed",
+    "water2": "12.791 kg\n\nWater removed",
+    "water3": "9.302 kg\n\nWater removed",
+    "blocked": true,
+    "lab": true,
+    "href": "/assets/docs/JU_Technical_Report.pdf",
+    "video": {
+      "src": "/assets/docs/JU_Silent_Technical_Demonstration.mp4",
+      "duration": 227,
+      "paused": true
+    },
+    "errors": [],
+    "canvas": 1
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Paddy Dryer Portfolio",
+      "hasCanvas": false,
+      "bodyTextLen": 18277,
+      "bodyTextHash": "883ce0ed677facbef96f816f94f152ee74ce6ec3996ab1a67a47baa60b8f4914",
+      "bodyTextPrefix": "Skip to content JADAVPUR UNIVERSITY · DEPARTMENT OF MECHANICAL E",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Paddy Dryer Portfolio",
+      "hasCanvas": false,
+      "bodyTextLen": 18277,
+      "bodyTextHash": "883ce0ed677facbef96f816f94f152ee74ce6ec3996ab1a67a47baa60b8f4914",
+      "bodyTextPrefix": "Skip to content JADAVPUR UNIVERSITY · DEPARTMENT OF MECHANICAL E",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/source-serif-4/600.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+@theme {
+  --color-navy: #142d40;
+  --color-navy-deep: #0e2233;
+  --color-paper: #f7f4ee;
+  --color-card: #fffdf8;
+  --color-line: #d5ddd8;
+  --color-teal: #087f82;
+  --color-teal-ink: #065c60;
+  --color-amber: #d69b3c;
+  --color-amber-ink: #7a5310;
+  --color-muted: #3e5563;
+  --color-warn: #fbf6ec;
+  --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-paper);
+    color: var(--color-navy);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+  .btn {
+    min-height: 2.75rem;
+    border: 1px solid var(--color-line);
+    background: var(--color-card);
+    color: var(--color-navy);
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius);
+  }
+  .btn[aria-pressed="true"] {
+    border-color: var(--color-teal);
+    color: var(--color-teal-ink);
+  }
+  #content,
+  #content .grid > * {
+    min-width: 0;
+  }
+  #content a,
+  #content p,
+  #content li {
+    overflow-wrap: anywhere;
+  }
+  .katex-display {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

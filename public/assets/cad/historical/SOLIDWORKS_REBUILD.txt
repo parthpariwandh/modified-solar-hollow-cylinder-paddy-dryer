@@ -1,0 +1,107 @@
+HOLLOW-CYLINDER PADDY DRYER
+Simple SolidWorks rebuild  (concept model, starter sizes)
+Units: MMGS   ·   Part or small Assembly
+Student: Parth Pariwandh  ·  Jadavpur University ME
+
+These numbers are STARTER values so you can click a model today.
+They are NOT frozen design. Change them after your first energy-balance.
+
+----------------------------------------------------------------
+STARTER SIZES
+----------------------------------------------------------------
+Outer cylinder outside diameter     300 mm
+Outer wall thickness                  3 mm
+Outer cylinder height               500 mm
+Inner tube outside diameter         140 mm
+Inner wall thickness                  2 mm
+Inner tube height                   470 mm
+Annulus (paddy bed) gap              77 mm   (150-3-70)
+Perforation diameter                  4 mm   (must stay smaller than local paddy)
+Perforation pitch (around)           20 °    → 18 holes / row
+Perforation pitch (height)           40 mm   → 10 rows
+Charge hopper height                120 mm
+Discharge cone height                50 mm
+Stand footprint                   280×280 mm
+Stand height                         80 mm
+Square-tube leg                      25 mm
+
+----------------------------------------------------------------
+HOW TO BUILD IT IN SOLIDWORKS  (about 20 minutes)
+----------------------------------------------------------------
+Create a PART named  01_Outer_Shell
+
+1. Front Plane > Sketch
+   - Centreline on the vertical axis.
+   - Rectangle from Y=80 to Y=580, X=147 to X=150
+     (this is the 3 mm wall of the 300 mm OD cylinder).
+2. Revolve Boss/Base 360° about the centreline.
+   You now have the outer absorber shell.
+
+Create a PART named  02_Inner_Shell
+
+3. Front Plane > Sketch
+   - Rectangle from Y=95 to Y=565, X=68 to X=70.
+4. Revolve 360°.
+5. Hole Wizard or Cut-Extrude:
+   - On the outer face of the inner tube, sketch a 4 mm circle
+     at Y=120, sitting on the surface.
+   - Cut-Extrude Through All (or Up To Next into the bore).
+6. Circular Pattern: 18 instances about the tube axis.
+7. Linear Pattern the circular set up the axis: 10 instances, 40 mm spacing.
+   This is the perforated inner shell.
+
+Create a PART named  03_Hopper
+
+8. Front Plane > Sketch a trapezoid:
+   - Outer profile from (150,580) to (90,700) and inner from (147,580) to (40,700).
+9. Revolve 360°.
+
+Create a PART named  04_Discharge
+
+10. Front Plane > Sketch a trapezoid:
+    - Outer from (35,30) to (150,80) and inner from (33,30) to (147,80).
+11. Revolve 360°.
+
+Create a PART named  05_Stand
+
+12. Sketch a 280×280 square on Top Plane.
+13. Offset inward 25 mm. Extrude the frame 25 mm (bottom rail).
+14. Extrude four 25×25 legs 80 mm high at the corners.
+15. Copy the 280×280 frame at Z=55 (top rail).
+
+Create an ASSEMBLY named  Hollow_Cylinder_Paddy_Dryer
+
+16. Insert 05_Stand on the origin.
+17. Mate 04_Discharge concentric + coincident on the stand top.
+18. Mate 01_Outer_Shell concentric to Discharge, coincident on the
+    discharge upper flange.
+19. Mate 02_Inner_Shell concentric to Outer_Shell, 15 mm up from
+    the shell floor so grain cannot fall into a closed bottom.
+20. Mate 03_Hopper concentric + coincident on the top of Outer_Shell.
+
+Optional appearance
+- Outer shell: dark grey / black (absorber coating).
+- Inner shell: light steel.
+- Stand: dark steel.
+
+----------------------------------------------------------------
+WHAT THIS MODEL IS / IS NOT
+----------------------------------------------------------------
+IS
+- A rebuildable feature tree you can take to your supervisor.
+- A geometry to measure surface area for a first energy-balance.
+- A cutting-list source (unroll the cylinders in SolidWorks Sheet Metal
+  later if you switch the outer shell to a rolled sheet).
+
+IS NOT
+- A proven dryer.
+- A final hole pattern (4 mm / 18 / 10 is only so the model looks right).
+- A mill. Keep the dehusker as a separate part later.
+
+----------------------------------------------------------------
+FILES IN THIS FOLDER
+----------------------------------------------------------------
+Hollow_Cylinder_Paddy_Dryer_Concept.stl   import for a quick look
+Hollow_Cylinder_Paddy_Dryer.scad          parametric twin (OpenSCAD)
+SOLIDWORKS_REBUILD.txt                    this sheet
+----------------------------------------------------------------
